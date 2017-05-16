@@ -6,69 +6,64 @@ block content
     .row
       .col-md-3.welcome
         .rounded-shadow
-          a(href="//www.ioos.noaa.gov/glider/welcome.html")
-            img(src="/images/flying_glider.jpg", alt="IOOS Gliders")
+          a(href="//ioos.noaa.gov/project/hf-radar/", target="_blank")
+            img.img-responsive(src="/images/hf-radar.jpg", alt="IOOS HF Radar")
       .col-md-9
         .caption.caption-header
-          h3 IOOS Glider DAC
+          h3 IOOS HF Radar
           p.
-            The mission of the Glider DAC is to provide glider operators with a
-            simple process for submitting  glider data sets to a centralized
-            location, enabling the data to be visualized, analyzed, widely
-            distributed via existing web services and the Global
-            Telecommunications System (GTS) and archived at the National
-            Centers for Environmental Information (NCEI).
+            IOOS operates the nation’s only high-frequency (HF) radar network, 
+            providing real-time information on the speed and direction of surface 
+            currents. This network supports search and rescue operations, response 
+            to oil spills, marine shipping navigation, monitoring and tracking 
+            harmful algal blooms and coastal water quality monitoring. The data 
+            are also routinely ingested into oceanographic models. Research is 
+            exploring the use of HF radar for application to tsunami detection 
+            and monitoring significant wave heights. The network currently 
+            consists of approximately 140 radars in nearly every coastal state 
+            plus Puerto Rico.
 
           p
-            | As scientists deploy more gliders, they are revolutionizing how we
-            | observe our ocean. This data creates a more complete picture of
-            | what is happening in the ocean, especially below the surface. The
-            | robots collect information by profiling the water from the surface
-            | to deep water, at lower cost and less risk than ever before.
-            | Currently, the IOOS Regional Associations (RAs), which conduct a
-            | combination of routine, sustained, and event driven monitoring, are
-            | the main contributors to the IOOS glider DAC.  The IOOS Underwater
-            | Glider Network Map is a collaborative effort and includes current
-            | and historical glider missions dating back to 2005 from 
-
-            a(href="http://gcoos.tamu.edu/", target="_blank")
-              |  Gulf of Mexico
-            |  (GCOOS),
-
-            a(href="http://sccoos.org/" , target="_blank")
-              |  Southern California
-            |  (SCCOOS),
-
-            a(href="http://nanoos.org/" , target="_blank")
-              |  Northern Pacific
-            |  (NANOOS),
-
-            a(href="http://cencoos.org/" , target="_blank")
-              |  Central and Northern California
-            |  (CeNCOOS),
-
-            a(href="http://glos.us/" , target="_blank")
-              |  Great Lakes
-            |  (GLOS),
-
-            a(href="http://maracoos.org/" , target="_blank")
-              |  Mid-Atlantic
-            |  (MARACOOS), and the
-
-            a(href="http://www.aoml.noaa.gov/", target="_blank")
-              |  Atlantic Oceanographic and Meteorological Lab
-
-            |  (AOML). The gliders displayed have been funded by U.S. IOOS, NOAA,
-            | ONR, NSF, EPA, various universities, state agencies and industries.
-    .row
+            | Registration at 
+            a(href="http://rowg.org/bin/view/System/UserRegistration", target="_blank")
+              | http://rowg.org/bin/view/System/UserRegistration
+            |  is strongly encouraged to enable access to the latest documents on data 
+            | management and analysis.  NOTE:  ROWG.org is a wiki so registration is 
+            | required and is moderated.  Therefore, one’s access will not be immediate. 
+    hr
+    .row.map
       .col-md-12
-        a(href="http://gliders.ioos.us/map/", target="_blank")
+        a(href="//cordc.ucsd.edu/projects/mapping/maps/fullpage.php?", target="_blank")
           #helper-overlay
             p Click here to see the map
-          img.img-responsive(src="/images/ioos-map-screen-capture.png", alt="IOOS Gliders Map screen capture")
+          img.img-responsive(src="/images/scripps.png", alt="SCRIPPS")
+    .row.caption
+      .col-md-12
+        p
+          | This 
+          a(href="//cordc.ucsd.edu/projects/mapping/maps/fullpage.php?", target="_blank")
+            | Scripps page
+          |  is the development site for the national HF radar network and gives access 
+          | to radar site metadata and diagnostics. The radar sites are marked with 
+          | green, red, yellow or white balloon markers.
+    hr
+    .row.map
+      .col-md-12
+        a(href="//hfradar.ndbc.noaa.gov/", target="_blank")
+          #helper-overlay
+            p Click here to see the map
+          img.img-responsive(src="/images/ndbc.png", alt="NDBC")
+    .row.caption
+      .col-md-12
+        p
+          | This National Data Buoy Center page is accessed 
+          a(href="//hfradar.ndbc.noaa.gov/", target="_blank")
+            | here
+          | .
+    hr
     .row
       .section-heading
-        h1 Glider Resources
+        h1 HFR Resources
     .row
       .col-sm-6.col-md-3
         ul.nav.nav-pills.glider-resources
@@ -77,26 +72,9 @@ block content
               | General Info
             ul#menu1.dropdown-menu(aria-labelledby="drop1")
               li
-                a(href="http://www.ioos.noaa.gov/glider/welcome.html", target="_blank") IOOS Gliders Homepage
-                p Summary of IOOS glider and AUV activities
-              li.divider(role="separator")
-              li
-                a(href="http://www.iooc.us/activities/task-teams/glider-tt/", target="_blank")
-                  | IOOC Glider Task Team
-                p.
-                  The goals of the Interagency Ocean Observation Committee
-                  (IOOC) Glider Task Team are to enable increased engagement
-                  with the glider community and to advance the coordinated use
-                  of glider observing systems to meet global, national and
-                  regional sub-surface observing requirements.
-              li.divider(role="separator")
-              li
-                a(href="/benefits") IOOS GliderDAC Benefits
-                p.
-                  The Glider DAC provides a number of benefits to glider
-                  operators to improve their experience with their glider data
-                  including data distribution, quality assurance, and
-                  visualization\.
+                a(href="//ioos.noaa.gov/project/hf-radar", target="_blank") IOOS HF Radar Homepage
+                p Summary of IOOS HF radar activities National HF Radar Plan
+
       .col-sm-6.col-md-3
         ul.nav.nav-pills.glider-resources
           li.dropdown(role="presentation")
@@ -104,23 +82,17 @@ block content
               | Data Visualization &amp; Access
             ul#menu2.dropdown-menu(aria-labelledby="drop2")
               li
-                a(href="/metrics") Glider Metrics
-                p.
-                  Infographic depicting the number of glider datas per regional
-                  association from 2008 to 2014
+                a(href="//cordc.ucsd.edu/projects/mapping/rtv7day.kml", target="_blank") Google Earth KML (7 day)
               li.divider(role="separator")
               li
-                a(href="http://data.ioos.us/gliders/erddap/index.html", target="_blank") ERDDAP Catalog
-                p.
-                  The ERDDAP Catalog provides direct access to all GliderDAC
-                  datasets and allows users to make maps and graphs.
+                a(href="//hfrnet.ucsd.edu/thredds/catalog.html", target="_blank") Data Access via CORDC THREDDS Server
               li.divider(role="separator")
               li
-                a(href="http://data.nodc.noaa.gov/geoportal/rest/find/document?searchText=NGDAC&start=1&max=25&contentOption=intersecting&f=searchPage&dojo.preventCache=1452007401768", target="_blank") NCEI Glider Archive Data
-                p.
-                  NCEI archives data and metadata independently of the original
-                  data providers so that it is available for use by future
-                  users.
+                a(href="//sdf.ndbc.noaa.gov/thredds/", target="_blank") Data Access via NDBC THREDDS Server
+              li.divider(role="separator")
+              li
+                a(href="//rowg.org/bin/view/Data_Management/FileFormatsConversion", target="_blank") Conversion of native radar formats to standardized format
+                p ROWG.org wiki registration required and is moderated so one’s access will not be immediate. There are also data analysis tools kept at the ROWG.org wiki page.
 
       .col-sm-6.col-md-3
         ul.nav.nav-pills.glider-resources
@@ -129,37 +101,15 @@ block content
               | Documentation
             ul#menu3.dropdown-menu(aria-labelledby="drop3")
               li
-                a(href="/static/pdf/Manual-for-QC-of-Glider-Data_05_09_16.pdf", target="_blank").
-                  Manual for Quality Control of Temperature and Salinity Data
-                  Observations from Gliders
-                p.
-                  This manual describes the tests required to ensure the
-                  quality control (QC) of real-time data collected by sensors
-                  attached to profiling gliders.
+                a(href="//ioos.noaa.gov/project/hf-radar/#documents", target="_blank") General HF radar network documents including archiving at NCEI
               li.divider(role="separator")
               li
-                a(href="https://github.com/ioos/ioosngdac/wiki", target="_blank").
-                  IOOS National Glider DAC Wiki
-                p.
-                  A collection of documents and resources describing the NetCDF
-                  file specification, data provider registration and data set
-                  submission processes for contributing glider data sets to the
-                  GliderDAC\.
+                a(href="//rowg.org/bin/view/Data_Management/HFRadarNetwork", target="_blank") A large number of files that describe the network servers and file formats
+                p ROWG.org wiki registration required and is moderated so one’s access will not be immediate
               li.divider(role="separator")
               li
-                a(href="/static/pdf/IOOS_National_Glider_Data_Assembly_CenterSIF.pdf", target="_blank").
-                  NCEI Submission Information Form for the IOOS National Glider
-                  Data Assembly Center
-                p.
-                  Describes process used to establish archiving of GliderDAC data with NCEI
-              li.divider(role="separator")
-              li
-                a(href="http://www.ioos.noaa.gov/glider/strategy/natl_glider_ntwrk_plan_final.pdf", target="_blank").
-                  IOOS Underwater Glider Network Plan
-                p.
-                  Strategy for using underwater gliders as part of a larger
-                  comprehensive three dimensional ocean, coastal, and Great
-                  Lakes observing system.
+                a(href="//ioos.noaa.gov/ioos-in-action/manual-real-time-quality-control-high-frequency-radar-surface-current-data/", target="_blank").
+                  QARTOD Manual
 
       .col-sm-6.col-md-3
         ul.nav.nav-pills.glider-resources
@@ -168,18 +118,9 @@ block content
               | Data Provider Tools
             ul#menu4.dropdown-menu(aria-labelledby="drop4")
               li
-                a(href="http://data.ioos.us/compliance", target="_blank").
-                  IOOS Compliance Checker
-                p.
-                  Web-based tool to check local or remote datasets for
-                  compliance against a variety of standards, including the IOOS
-                  GliderDAC
+                a(href="//cordc.ucsd.edu/projects/mapping/api/", target="_blank").
+                  Mapping API (For off-site maps)
               li.divider(role="separator")
               li
-                a(href="http://gliders.ioos.us/status", target="_blank").
-                  GliderDAC Submission Status Page
-                p.
-                  Web-based tool for tracking the submission of glider data to
-                  the GliderDAC.  Provides summary of deployments, WMO IDs,
-                  number of profiles, time coverage, and data availability
-                  through ERDDAP and THREDDS.
+                a(href="//cordc.ucsd.edu/projects/mapping/documents/ArcGIS_loadData_toolbox.zip", target="_blank").
+                  ArcGIS Toolbox

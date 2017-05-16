@@ -3,15 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/benefits', function(req, res, next) {
-  res.render('benefits', {title: 'Benefits'});
-});
-
-router.get('/metrics', function(req, res, next) {
-  res.render('metrics', {title: 'metrics'});
+  res.render('index', { title: 'IOOS HF Radar' });
 });
 
 module.exports = router;
