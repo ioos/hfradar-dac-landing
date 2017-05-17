@@ -1,7 +1,5 @@
-# gliders
-The front page / home page for IOOS National Glider DAC
-
-Please do not file issues here,  all GliderDAC related issues should be filed in the [IOOS National Glider Data Assembly Center (V2)](OOS National Glider Data Assembly Center (V2)) repository.
+# HF Radar DAC
+The front page / home page for IOOS HF-Radar DAC
 
 
 # Installation
@@ -15,25 +13,19 @@ Please do not file issues here,  all GliderDAC related issues should be filed in
 
    _You may need to run as sudo_
 
-3. Install grunt
-
-   ```
-   npm install -g grunt-cli
-   ```
-
-4. Use node to build the project dependencies
+3. Use node to build the project dependencies
 
    ```
    npm install
    ```
 
-5. Use bower to install the UI depencies
+4. Use bower to install the UI depencies
 
    ```
    bower install
    ```
 
-6. Run the project
+5. Run the project
 
     ```
     bin/www
