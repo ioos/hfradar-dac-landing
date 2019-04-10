@@ -1,6 +1,6 @@
 {
   "name": "hfradar-dac-landing",
-  "version": "0.0.3p6",
+  "version": "0.0.3p7",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
