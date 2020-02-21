@@ -1,31 +1,22 @@
-FROM debian:jessie
-MAINTAINER Luke Campbell <luke.campbell@rpsgroup.com>
+FROM node:13.7.0-alpine
+LABEL maintainer="devops@rpsgroup.com"
 
-ENV NODE_VERSION 7.9.0
-ENV GOSU_VERSION 1.9
-ENV SCRIPTS_DIR /opt/build_scripts
+COPY bin /opt/hfradar-dac-landing/bin
+COPY public /opt/hfradar-dac-landing/public
+COPY routes /opt/hfradar-dac-landing/routes
+COPY views /opt/hfradar-dac-landing/views
+COPY app.js package.json /opt/hfradar-dac-landing/
 
-RUN mkdir -p $SCRIPTS_DIR
-RUN useradd -m node
+RUN apk update && \
+    apk add yarn && \
+    rm -rf /var/cache/apk/*
 
-COPY contrib/scripts/ $SCRIPTS_DIR/
-
-RUN sed -i '/jessie-updates/d' /etc/apt/sources.list  # Now archived
-
-RUN $SCRIPTS_DIR/install-deps.sh
-RUN $SCRIPTS_DIR/install-node.sh
-COPY bin /opt/gliders/bin
-COPY public /opt/gliders/public
-COPY routes /opt/gliders/routes
-COPY views /opt/gliders/views
-COPY .bowerrc app.js bower.json package.json /opt/gliders/
-
-WORKDIR /opt/gliders
-RUN chown -R node:node /opt/gliders
-USER node
-RUN npm install && \
-    node_modules/bower/bin/bower install
+WORKDIR /opt/hfradar-dac-landing
+RUN yarn
 
 ENV NODE_ENV production
+
+# don't run as root
+USER node
 
 CMD ["bin/www"]
